@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
     .setColor("#00ff7b")
     .addField("!kick", "Use command and tag someone with a reason following. Must have Message Managing Permissions to use.")
     .addField("!ban", "Use command and tag someone with a reason following. Must have Role Managing Permissions to use.")
-    .addField("!say", "Outputs what you put after the command.")
+    .addField("!echo", "Outputs what you put after the command.")
     .addField("!clear", "Put command and then a number after it. Will delete that many messages. Minimum 2.");
 
     return message.channel.send(adembed);
