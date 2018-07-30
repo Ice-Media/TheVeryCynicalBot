@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
     // if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("Missing Permission: Manage Messages");
 
     let adembed = new Discord.RichEmbed()
-    .setDescription("Admin Help")
+    .setTitle("Admin Help")
     .setColor("#00ff7b")
     .addField("!kick", "Use command and tag someone with a reason following. Must have Message Managing Permissions to use.")
     .addField("!ban", "Use command and tag someone with a reason following. Must have Role Managing Permissions to use.")
