@@ -8,9 +8,9 @@ module.exports.run = async (bot, message, args) =>{
     .setColor("#0087ff")
     .setThumbnail(bicon)
     .addField("Bot Name", bot.user.username)
-    .addField("Version", "0.9.6")
+    .addField("Version", "1.0.0")
     .addField("Creator", "Cynical's Dev Team")
-    .addField("Help?", "Ice#8526")
+    .addField("Help?", "!help")
 
     return message.channel.send(botembed);
 
