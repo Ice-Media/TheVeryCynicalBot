@@ -42,4 +42,4 @@ bot.on("message", async message => {
 
 });
 
-bot.login("NDczMjA1NjMwMjU4MTE4NjY4.Dj-rnA.WkIVgqguEsl6IBxA12Y60ldcaSw");
+bot.login("INSERT TOKEN");
