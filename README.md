@@ -5,12 +5,11 @@ If you want to use this download and make a file in the main directory with inde
 
 
 Inside it put this:
-
+```
 {
-"token": "INSERT BOT TOKEN",
-"prefix": "!"
+"token": "INSERT BOT TOKEN"
 }
-
+```
 save it.
 
 Then Shift-Click and open a Powersheel/Command Prompt and type "npm install discord.js"
