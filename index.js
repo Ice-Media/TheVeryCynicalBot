@@ -22,7 +22,7 @@ fs.readdir("./Commands", (err, files) => {
 
 bot.on("ready", () => {
   console.log(`${bot.user.username} is online!`);
-  bot.user.setActivity("Beta 0.6.0");
+  bot.user.setActivity("Use !help");
 });
 
 bot.on("message", message => {
