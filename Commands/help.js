@@ -7,7 +7,8 @@ let helpembed = new Discord.RichEmbed()
 .setColor("#00ff7b")
 .addField("!botinfo", "Displays information about this bot.")
 .addField("!serverinfo", "Displays information about the server.")
-.addField("More Commands Soon to Come", "Be Patient");
+.addField("More Commands Soon to Come", "Be Patient")
+.addField("For Administrative Commands:", "Use !admhelp");
 
 return message.channel.send(helpembed);
 
