@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) =>{
     .setColor("#0087ff")
     .setThumbnail(bicon)
     .addField("Bot Name", bot.user.username)
-    .addField("Version", "1.0.0")
+    .addField("Version", "1.1.0")
     .addField("Creator", "Cynical's Dev Team")
     .addField("Help?", "!help")
 
