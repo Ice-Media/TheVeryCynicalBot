@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const versioncontrol = require("../versioncontrol.json")
 
 module.exports.run = async (bot, message, args) =>{
 
@@ -8,9 +9,9 @@ module.exports.run = async (bot, message, args) =>{
     .setColor("#0087ff")
     .setThumbnail(bicon)
     .addField("Bot Name", bot.user.username)
-    .addField("Version", "1.1.2")
+    .addField("Version", versioncontrol.version)
     .addField("Creator", "Cynical's Dev Team")
-    .addField("Help?", "!help")
+    .addField("Help?", "!help");
 
     return message.channel.send(botembed);
 
