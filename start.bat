@@ -1,2 +1,6 @@
+@echo off
 nodemon index.js
-pause
+:loop
+timeout 10800 /nobreak
+rs
+goto loop

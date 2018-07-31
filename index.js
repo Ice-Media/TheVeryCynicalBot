@@ -1,10 +1,11 @@
 const botconfig = require("./botconfig.json");
+const versioncontrol = require("./versioncontrol.json")
 const Discord = require("discord.js");
 const fs = require("fs");
 const bot = new Discord.Client({ disableEveryone: true });
 bot.commands = new Discord.Collection();
 
-fs.readdir("./commands", (err, files) => {
+fs.readdir("./Commands", (err, files) => {
   if (err) console.log(err);
 
   let jsfile = files.filter(f => f.split(".").pop() === "js");
@@ -14,7 +15,7 @@ fs.readdir("./commands", (err, files) => {
   }
 
   jsfile.forEach((f, i) => {
-    let props = require(`./commands/${f}`);
+    let props = require(`./Commands/${f}`);
     console.log(`${f} loaded.`);
     bot.commands.set(props.help.name, props);
   });
@@ -22,7 +23,7 @@ fs.readdir("./commands", (err, files) => {
 
 bot.on("ready", () => {
   console.log(`${bot.user.username} is online!`);
-  bot.user.setActivity("Use !help");
+  bot.user.setActivity("Type !help");
 });
 
 bot.on("message", message => {
