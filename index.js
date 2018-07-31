@@ -4,7 +4,7 @@ const fs = require("fs");
 const bot = new Discord.Client({ disableEveryone: true });
 bot.commands = new Discord.Collection();
 
-fs.readdir("./Commands", (err, files) => {
+fs.readdir("./commands", (err, files) => {
   if (err) console.log(err);
 
   let jsfile = files.filter(f => f.split(".").pop() === "js");
@@ -14,7 +14,7 @@ fs.readdir("./Commands", (err, files) => {
   }
 
   jsfile.forEach((f, i) => {
-    let props = require(`./Commands/${f}`);
+    let props = require(`./commands/${f}`);
     console.log(`${f} loaded.`);
     bot.commands.set(props.help.name, props);
   });
